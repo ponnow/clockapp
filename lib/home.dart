@@ -27,18 +27,9 @@ class _HomePageState extends State<HomePage> {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              TextButton(
-                onPressed: () {},
-                child: Column(
-                  children: const <Widget>[
-                    FlutterLogo(),
-                    Text(
-                      'Alarm Clock',
-                      style: TextStyle(color: Colors.white, fontSize: 14),
-                    )
-                  ],
-                ),
-              )
+              buildMenuButton('Clock', 'images/alarm.png'),
+              buildMenuButton('Alarm', 'images/alarm.png'),
+              buildMenuButton('Stopwatch', 'images/alarm.png'),
             ],
           ),
           const VerticalDivider(
@@ -89,6 +80,24 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
+        ],
+      ),
+    );
+  }
+
+  TextButton buildMenuButton(String title, String image) {
+    return TextButton(
+      onPressed: () {},
+      child: Column(
+        children: <Widget>[
+          Image.asset(image, scale: 1.5),
+          const SizedBox(height: 16),
+          Text(
+            title,
+            style: const TextStyle(
+                fontFamily: 'ubuntu', color: Colors.white, fontSize: 14),
+          ),
+          const SizedBox(height: 16),
         ],
       ),
     );
