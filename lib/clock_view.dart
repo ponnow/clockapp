@@ -111,6 +111,7 @@ class ClockPainter extends CustomPainter {
       var x2 = centerX + innerCircleRadius * cos(i * pi / 180);
       var y2 = centerX + innerCircleRadius * sin(i * pi / 180);
 
+      //canvas.drawCircle(Offset(x1, y1), 5, dashBrush);
       canvas.drawLine(Offset(x1, y1), Offset(x2, y2), dashBrush);
     }
   }
