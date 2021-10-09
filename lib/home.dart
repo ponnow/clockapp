@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
                   children: const <Widget>[
                     FlutterLogo(),
                     Text(
-                      'Clock',
+                      'Alarm Clock',
                       style: TextStyle(color: Colors.white, fontSize: 14),
                     )
                   ],
