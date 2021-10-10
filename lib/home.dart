@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
             style: const TextStyle(
                 fontFamily: 'ubuntu', color: Colors.white, fontSize: 14),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 64),
         ],
       ),
     );
